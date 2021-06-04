@@ -1,5 +1,6 @@
 class Character < ApplicationRecord
-    has_many :locations
+    has_many :location_characters
+    has_many :locations, through: :location_characters
     has_many :finds
     has_many :nerds, through: :finds
 

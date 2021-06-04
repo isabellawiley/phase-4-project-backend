@@ -1,0 +1,2 @@
+class LocationCharactersController < ApplicationController
+end

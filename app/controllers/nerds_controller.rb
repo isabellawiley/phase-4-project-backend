@@ -16,7 +16,7 @@ class NerdsController < ApplicationController
 
         if nerd.valid?
             nerd.save
-            render json: {id: nerd.id, name: nerd.name, state: nerd.state, username: nerd.username, token: encode_token({nerd_id: nerd.id})}
+            render json: {id: nerd.id, name: nerd.name, age: nerd.age, state: nerd.state, username: nerd.username, password: nerd.password_digest, token: encode_token({nerd_id: nerd.id}), total_points: nerd.total_points, characters: nerd.characters}
         else
             render json: {message: "Invalid Input", full_messages: nerd.errors.full_messages}
         end
@@ -26,7 +26,7 @@ class NerdsController < ApplicationController
         nerd = Nerd.find_by(username: params[:username])
 
         if nerd && nerd.authenticate(params[:password])
-            render json: {id: nerd.id, name: nerd.name, state: nerd.state, username: nerd.username, token: encode_token({nerd_id: nerd.id})}
+            render json: {id: nerd.id, name: nerd.name, age: nerd.age, state: nerd.state, username: nerd.username, password: nerd.password_digest, token: encode_token({nerd_id: nerd.id}), total_points: nerd.total_points, characters: nerd.characters}
         else
             render json: {message: "wrong username/password"}
         end
@@ -37,7 +37,9 @@ class NerdsController < ApplicationController
     end
 
     def update
+        # byebug
         @nerd.update(nerd_params)
+        # byebug
         render json: @nerd
     end
 

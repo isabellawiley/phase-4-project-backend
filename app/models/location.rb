@@ -1,5 +1,6 @@
 class Location < ApplicationRecord
-    belongs_to :character
+    has_many :location_characters
+    has_many :characters, through: :location_characters
 
     validates :address, uniqueness: true
 end
