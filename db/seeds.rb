@@ -62,7 +62,7 @@ characters = [
         {
             name: "The Collector",
             bio: "Offbeat alien Taneleer Tivan seeks both objects and living creatures that he finds of interest for his massive collection, including unwilling participants and dangerous weapons.",
-            image: "https://lh3.googleusercontent.com/proxy/LQfsX-A5z_t_E2YRHi2FiziHzZwu5Z44plX74izdSzWAZq-jhijTHpMYsm2r_lQhOTJF9k8HhXSdqS0rR8a7X1b3bval9c9hMxfMXPD0I3phvuWVX4zdRcbgsOBVJgPA6A",
+            image: "https://i.pinimg.com/originals/7d/c8/85/7dc8855939d616a8ddd52f8ac51219e4.jpg",
             point_value: 1
         },
         {
@@ -82,7 +82,7 @@ characters = [
         {
             name: "Wasp",
             bio: "Showing the same scientific aptitude as her father, Hank Pym, Nadia Pym is inspired by both him and Janet van Dyne to fly into action as part of a new generation of heroes.",
-            image: "https://static.wikia.nocookie.net/marvel-cinematic-universe/images/e/e2/The_Wasp.jpg/revision/latest?cb=20181231165302",
+            image: "https://i.pinimg.com/originals/c3/e4/d2/c3e4d26073f35c35cfddf311455c083c.jpg",
             point_value: 2
         },
         {
@@ -118,13 +118,13 @@ characters = [
         {
             name: "Ebony Maw",
             bio: "Ruthlessly carrying out his master’s orders, Ebony Maw uses his formidable powers to enforce Thanos’ rule.",
-            image: "https://static.wikia.nocookie.net/marveldatabase/images/b/b9/Ebony_Maw_%28Earth-199999%29_from_Avengers_Infinity_War_003.jpg/revision/latest?cb=20180511013205",
+            image: "https://terrigen-cdn-dev.marvel.com/content/prod/1x/142ebm_ons_mas_mob_01.jpg",
             point_value: 2
         },
         {
             name: "Nebula",
             bio: "As a pirate and mercenary with her intentions set on conquering other empires, this daughter of Thanos is feared by many across the star systems.",
-            image: "https://static.wikia.nocookie.net/heroes-and-villain/images/5/59/Nebula_AIW_Profile.jpg/revision/latest?cb=20181015195019",
+            image: "https://assets.mycast.io/actor_images/actor-nebula-marvel-cinematic-universe-170605_large.jpg?1611954564",
             point_value: 2
         },
         {
@@ -156,7 +156,7 @@ characters = [
         {
             name: "Hawkeye",
             bio: "A master marksman and longtime friend of Black Widow, Clint Barton serves as the Avengers’ amazing archer.",
-            image: "https://static.wikia.nocookie.net/manowrites/images/0/08/HawkeyeRonin-EndgameProfile.jpg/revision/latest/top-crop/width/360/height/450?cb=20190906094613",
+            image: "https://www.pinkvilla.com/files/styles/contentpreview/public/hawkeye-disney-plus.jpg?itok=yJav5GBc",
             point_value: 3
         },
         {
@@ -180,7 +180,7 @@ characters = [
         {
             name: "Winter Soldier",
             bio: "Bucky Barnes was brought back from his supposed death to be a brainwashed assassin called the Winter Soldier. Reformed by his friends, he now fights alongside the Avengers.",
-            image: "https://static.wikia.nocookie.net/villains/images/4/41/Winter_Soldier_AIW_Profile.jpg/revision/latest?cb=20180821201940",
+            image: "https://i.pinimg.com/474x/9a/0c/1b/9a0c1b0f72683bdac67865f3fc9c69bd.jpg",
             point_value: 3
         }
     ],
@@ -334,3 +334,11 @@ end
         })
     end
 end
+
+isa = Nerd.create({
+    name: "Isabella",
+    age: 22,
+    state: "New Jersey",
+    username: "isa",
+    password: "pass123"
+})
